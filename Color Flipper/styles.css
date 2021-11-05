@@ -36,8 +36,7 @@ main {
 }
 
 main h1 {
-    display: block;
-    width: 33%;
+    width: 50%;
     border-radius: 5px;
     border: black solid 1px;
     background-color: black;
@@ -61,4 +60,8 @@ button {
     padding: 5px 15px;
     background-color: red;
     font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
 }
