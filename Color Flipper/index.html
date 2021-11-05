@@ -11,18 +11,19 @@
     <header>
         <nav>
             <ul>
-                <li class="active">
+                <li class="active" id="color-flipper">
                     Color Flipper
                 </li>
-                <li>
+                <li id="simple-hex">
                     Simple Hex
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Background Color :  <span>Red</span></h1>
-        <button type="button">CLICK ME</button>
+    <main id="background-color-main">
+        <h1>Background Color :  <span id="colorChanger">Red</span></h1>
+        <button id="background-color-button" type="button" onclick="handleClick()">CLICK ME</button>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
