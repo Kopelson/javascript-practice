@@ -1,0 +1,31 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 128px;
+    color : green;
+}
+
+button {
+    padding:5px;
+    border-radius: 5px;
+    background-color: white;
+    border-width: 2px;
+    margin: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: royalblue;
+    border-width: 2px;
+}
