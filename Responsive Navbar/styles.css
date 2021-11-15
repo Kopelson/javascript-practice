@@ -62,3 +62,10 @@ header ul li:visited {
 .show-links {
     display: block;
 }
+
+header nav button:hover {
+    cursor: pointer;
+    border: 5px solid cornflowerblue;
+    padding:0;
+    margin: 10px;
+}
