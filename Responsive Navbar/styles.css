@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 48px;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav h1 span {
+    color: cornflowerblue;
+}
+
+header nav button {
+    padding: 15px;
+    background-color: white;
+    border: none;
+}
+
+header nav button span{
+    color: cornflowerblue;
+    font-size: 48px;
+}
+
+header nav ul li {
+    display: inline;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.nav-menu{
+    display: none;
+    width:100%;
+}
