@@ -31,13 +31,34 @@ header nav button span{
     font-size: 48px;
 }
 
-header nav ul li {
-    display: inline;
-    text-decoration: none;
+header ul {
+    list-style-type: none;
     margin: 15px;
+    padding: 15px;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a {
+    display: block;
+}
+
+header ul li a:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.24);
+}
+
+header ul li:visited {
+    color: black;
 }
 
 .nav-menu{
     display: none;
     width:100%;
+}
+
+.show-links {
+    display: block;
 }
