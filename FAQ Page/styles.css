@@ -43,6 +43,18 @@ button {
     border-color: rgb(156, 136, 18);
 }
 
-.answer {
+.hidden {
     display: none;
+}
+
+.answer {
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+hr {
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
