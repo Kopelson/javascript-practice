@@ -1,13 +1,4 @@
-// Key concepts covered:
-
-// arrays
-// objects
-// forEach()
-// DOMContentLoaded
-// map, reduce, and filter
-// innerHTML
-// includes method
-
+//initializes the menu object
 const menu = {
     breakfast: [
         {
@@ -29,7 +20,6 @@ const menu = {
             image: "https://media.istockphoto.com/photos/cooked-greasy-bacon-picture-id160860037"
         }
     ],
-
     lunch: [
         {
             title: "Diner Double",
@@ -50,7 +40,6 @@ const menu = {
             image: "https://bakerbynature.com/wp-content/uploads/2016/02/IMG_8456-6-2.jpg"
         }
     ],
-
     shakes: [
         {
             title: "Godzilla Milkshake",
@@ -71,10 +60,9 @@ const menu = {
             image: "https://www.thespruceeats.com/thmb/to4ToJyiIm0DcxElULigDHKTOPY=/1500x1041/filters:fill(auto,1)/chocolatemilkshake-5c6e0b9e46e0fb0001e6e84d.jpg"
         },
     ]
-}
+};
 
-
-
+//generates a menu item card
 function generateMenuItem(title, price, description, image){
     //Select menu div
     const menuDiv = document.getElementById('menu');
@@ -110,7 +98,6 @@ function generateMenuItem(title, price, description, image){
     const cardDescriptionP = document.createElement('p');
     cardDescriptionP.className = 'padding';
     cardDescriptionP.innerText = description;
-
     //append newly created elements to the menu 
     menuDiv.append(cardDiv);
     //the following appends creates a menu item card
@@ -123,21 +110,72 @@ function generateMenuItem(title, price, description, image){
     cardInfoDiv.appendChild(cardDescriptionDiv);
     cardDescriptionDiv.appendChild(cardHr);
     cardDescriptionDiv.appendChild(cardDescriptionP);
-
-    
 }
 
-function loadMenu(){
-    menu.breakfast.forEach(element => {
-        generateMenuItem(element.title, element.price, element.description, element.image)
-    });
-    menu.lunch.forEach(element => {
-        generateMenuItem(element.title, element.price, element.description, element.image)
-    });
-    menu.shakes.forEach(element => {
-        generateMenuItem(element.title, element.price, element.description, element.image)
-    });
+//loads menu based on category
+function loadMenu(category){
+    //Select menu div
+    const menuDiv = document.getElementById('menu');
+    //Empty current menu items
+    menuDiv.querySelectorAll('*').forEach(n => n.remove());
+    //checks the category and then generates a menu item card
+    if(category === "breakfast" || category === "all"){
+        menu.breakfast.forEach(element => {
+            generateMenuItem(element.title, element.price, element.description, element.image)
+        }); 
+    };
+    //checks the category and then generates a menu item card
+    if(category === "lunch" || category === "all"){
+        menu.lunch.forEach(element => {
+            generateMenuItem(element.title, element.price, element.description, element.image)
+        });
+    };
+    //checks the category and then generates a menu item card
+    if(category === "shakes" || category === "all"){
+        menu.shakes.forEach(element => {
+            generateMenuItem(element.title, element.price, element.description, element.image)
+        });  
+    };
+} 
+
+function handleClick(e){
+    //select all elements with the class active
+    const active = document.getElementsByClassName('active');
+    //first checks if the current target has the class active
+    if (e.target.classList.contains('active')){
+        return
+    }
+    //then checks the if the click one of the nav buttons by id 
+    //then changes the active class to this button
+    //loads the the targets menu items
+    if (e.target.id === "breakfast"){
+        active[0].classList.remove('active');
+        e.target.classList.add('active');
+        loadMenu('breakfast');
+        return
+    }
+    if (e.target.id === "lunch"){
+        active[0].classList.remove('active');
+        e.target.classList.add('active');
+        loadMenu('lunch');
+        return
+    }
+    if (e.target.id === "shakes"){
+        active[0].classList.remove('active');
+        e.target.classList.add('active');
+        loadMenu('shakes');
+        return
+    }
+    if (e.target.id === "all"){
+        active[0].classList.remove('active');
+        e.target.classList.add('active');
+        loadMenu('all');
+        return
+    }
 }
+
+//adds a click handler on the entire document
+document.addEventListener('click', handleClick);
 
 //initialize menu items
-loadMenu();
+loadMenu("all");
