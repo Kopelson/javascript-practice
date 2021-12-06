@@ -6,36 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Scroll</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/0e9a8ca1d0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
+        <div class="flexbox">
         <h1>Logo</h1>
-        <nav>
+        <div class="icon-toggle">
+            <i class="fas fa-bars"></i> 
+        </div>
+        <nav class="menu">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li class="special">Tours</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li class="special"><a href="#tour">Tours</a></li>
             </ul>
         </nav>
+
+        </div>
+        <div class="nav-toggle">
+            <nav>
+                <ul class="take-all-space-you-can">
+                    <li class="take-all-space-you-can"><a href="#home">Home</a></li>
+                    <li class="take-all-space-you-can"><a href="#about">About</a></li>
+                    <li class="take-all-space-you-can"><a href="#services">Services</a></li>
+                    <li class="take-all-space-you-can"><a href="#tour" class="special">Tours</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section id="home">
             <h1>Scroll Project</h1>
         </section>
-        <section>
+        <section id="about">
             <h2>About Us</h2>
         </section>
-        <section>
+        <section id="services">
             <h2>Our Services</h2>
         </section>
-        <section>
+        <section id="tour">
             <h2>Featured Tours</h2>
         </section>
     </main>
     <footer id="footer">
         <small>Scroll Project 2021</small>
+        <a href="#home" class="back-to-top">Back to Top</a>
     </footer>
     <script src="./script.js"></script>
+    
 </body>
 </html>

@@ -11,3 +11,12 @@ function handleScroll(){
 }
 
 document.addEventListener("scroll", handleScroll);
+
+
+const icon = document.querySelector('.icon-toggle');
+const nav = document.querySelector(".nav-toggle")
+
+icon.addEventListener("click", function(){
+    console.log("clicked icon")
+    nav.classList.toggle("show-links");
+})
