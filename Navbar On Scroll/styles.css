@@ -2,5 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+section {
+    background-color: rebeccapurple;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    color: white;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.special {
+    color: cornflowerblue;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
