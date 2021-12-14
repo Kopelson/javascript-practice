@@ -9,6 +9,7 @@ header {
     font-size: larger;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 main {
@@ -24,4 +25,15 @@ label, button {
 input {
     margin: 5px;
     padding: 5px;
+}
+
+.lorem-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.result {
+    padding: 15px;
 }
