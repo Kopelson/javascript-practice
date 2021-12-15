@@ -15,36 +15,17 @@
             <h1>Grocery Bud</h1>
         </div>
         <div class="card-form">
-            <form>
-                <input type="text" placeholder="e.g. eggs" />
-                <input type="submit" value="Submit" />
+            <form class="grocery-form">
+                <input type="text" placeholder="e.g. eggs" id="item" />
+                <input type="submit" value="Submit" id="submit" />
             </form>
         </div>
         <div class="card-list">
-            <ul>
-                <li>
-                    Eggs
-                    <div class="icons">
-                    <i class="fas fa-edit green"></i>
-                    <i class="fas fa-trash-alt red"></i>
-                    </div>
-                </li>
-                <li>
-                    Second Item
-                    <div class="icons">
-                    <i class="fas fa-edit green"></i>
-                    <i class="fas fa-trash-alt red"></i>
-                    </div>
-                </li>
-                <li>
-                    Fish
-                    <div class="icons">
-                    <i class="fas fa-edit green"></i>
-                    <i class="fas fa-trash-alt red"></i>
-                    </div>
-                </li>
+            <ul id="list">
+                <!-- list items -->
             </ul>
         </div>
+        <button onclick="clearItems()">Clear Items</button>
     </div>
     </main>
     <script src="./script.js"></script>
