@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(214, 202, 202);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    min-width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 50px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+.card-form{
+    width: 100%;
+}
+
+input[type=text], input[type=submit] {
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    
+}
+
+input[type=text]{
+    background-color: rgba(100, 148, 237, 0.548);
+    width: 75%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: cornflowerblue;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -15px;
+}
+
+.card-list li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
