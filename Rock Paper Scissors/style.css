@@ -39,6 +39,7 @@ footer {
     background-color: #8F0FF7;
     width: 50%;
     padding: 15px;
+    padding-top: 50px;
 }
 
 .game-choice {
@@ -48,12 +49,14 @@ footer {
     border: 5px solid cadetblue;
 }
 
-.game-choice i {
+.game-choice h1 i {
     padding: 15px;
     font-size: 2em;
 }
 
 .game-buttons {
+    display: flex;
+    justify-content:space-around;
     background-color: cadetblue;
     border: 5px solid cadetblue;
 }
@@ -79,11 +82,30 @@ border: 5px solid cadetblue;
 
 button {
     padding: 15px 20px;
-    font-size: 1em;
+    font-size: 2em;
+}
+
+.win {
+    background-color: #0F7BF7;
+}
+
+.lose {
+    background-color: rgb(248, 248, 248);
+}
+
+.tie {
+    background-color: gray;
 }
 
 @media screen and (max-width: 549px) {
     .game-container {
         width: 100%;
+        padding-top: 15px;
+    }
+    .game-option h1 i {
+        font-size: 2em;
+    }
+    button {
+        font-size: 1em;
     }
   }
