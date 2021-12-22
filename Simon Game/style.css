@@ -49,7 +49,7 @@ main {
     box-shadow: -4px -4px 16px 0px;
 }
 
-.top-left:hover{
+.top-left:active{
     background-color:rgba(255, 99, 71, 0.50);
 }
 
@@ -68,7 +68,7 @@ main {
   
 }
 
-.top-right:hover{
+.top-right:active{
     background-color: #41daf250;
 
 }
@@ -87,9 +87,9 @@ main {
     box-shadow: 4px 4px 16px 0px;
 }
 
-.bottom-right:hover{
+.bottom-right:active{
     background-color: #5AF2B150;
-}
+} 
 
 .bottom-left{
     cursor: pointer;
@@ -105,9 +105,9 @@ main {
     box-shadow: -4px 4px 16px 0px;
 }
 
-.bottom-left:hover{
+.bottom-left:active{
     background-color:  #F2BB4150;
-}
+} 
 
 .inner-circle {
     padding: 15px;
@@ -134,5 +134,16 @@ button {
 }
 
 .active {
-    background-color: rgba(245, 245, 245, 0.288);
+    animation: active 2s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes active {
+    0%   {opacity: 1;}
+    25%  {opacity: .66;}
+    33%  {opacity: .33;}
+    50%  {opacity: .0;}
+    66%  {opacity: .33;}
+    75%  {opacity: .66;}
+    100% {opacity: 1;}
+  }

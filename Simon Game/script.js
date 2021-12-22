@@ -40,6 +40,7 @@ function removeActive(){
 
 function simonDisplay(color){
     console.log("showing color: " + color);
+    removeActive();
     if(color === "red"){
         red.classList.add("active");
     }
@@ -111,7 +112,6 @@ function startGame(){
     fillSimonArray()
     let index = 0;
     gameInterval = setInterval(function(){
-        removeActive();
         simonDisplay(simonArray[index])
         index ++;
         if(index > simonArray.length - 1){
