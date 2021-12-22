@@ -51,8 +51,6 @@ main {
 
 .top-left:hover{
     background-color:rgba(255, 99, 71, 0.50);
-
-
 }
 
 .top-right{
@@ -135,6 +133,6 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
-    background-color: rgb(202, 202, 202);
+.active {
+    background-color: rgba(245, 245, 245, 0.288);
 }

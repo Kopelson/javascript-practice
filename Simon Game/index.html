@@ -10,19 +10,26 @@
 <body>
     <header>
         <h1>Simon Game</h1>
+        
     </header>
     <main>
-        <div class="top-left"></div>
-        <div class="top-right"></div>
-        <div class="bottom-left"></div>
-        <div class="bottom-right"></div>
+        <div class="top-left" id="red"></div>
+        <div class="top-right" id="blue"></div>
+        <div class="bottom-left" id="yellow"></div>
+        <div class="bottom-right" id="green"></div>
         <div class="inner-circle">
             <h1>SIMON</h1>
-            <button>Start</button>
+            <button class="start">Start</button>
         </div> 
     </main>
+    <div>
+        <p id="message">Press Start to play! </p>
+        
+    </div>
     <footer>
-          <small>Kopelson 2021</small>
+
+        <p id="timer">Timer: 10</p>
+        <p id="score">Score: 0</p>
     </footer>
     </div>
     <script src="script.js"></script>
